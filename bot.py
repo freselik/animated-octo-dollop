@@ -6,7 +6,6 @@ from discord.ext import commands
 from discord.ext.commands import Bot
 
 BOT_PREFIX = ("^", "?")
-TOKEN = "NTcxMzYzNDQ0NzQyMTYwMzg0.XMMp6Q.7IPG02np67wQ-r_WCXAoiBzr6BY"
 # client = discord.Client()
 client = commands.Bot(command_prefix=BOT_PREFIX)
 
@@ -43,4 +42,4 @@ async def on_message(message):
     if message.content.startswith('^best'):
         await message.channel.send('{0.author.mention}'.format(message) + ' is the best!!')
 
-client.run(str(os.environ.get('NTcxMzYzNDQ0NzQyMTYwMzg0.XMMp6Q.7IPG02np67wQ-r_WCXAoiBzr6BY')))
+client.run(str(os.environ.get('BOT_TOKEN')))
