@@ -1,6 +1,9 @@
+import asyncio
 import random
+import os
 import discord
 from discord.ext import commands
+from discord.ext.commands import Bot
 
 BOT_PREFIX = ("^", "?")
 TOKEN = "NTcxMzYzNDQ0NzQyMTYwMzg0.XMMp6Q.7IPG02np67wQ-r_WCXAoiBzr6BY"
