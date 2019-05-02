@@ -13,7 +13,7 @@ client = commands.Bot(command_prefix=BOT_PREFIX)
 
 @client.event
 async def on_ready():
-    await client.change_presence(activity=discord.Game(name="^help, ?help"))
+    await client.change_presence(activity=discord.Game(name="^Freselik to kox!"))
     print('We have logged in as {0.user}'.format(client))
 
 
